@@ -1,5 +1,12 @@
 <template>
   <div class="hello">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <PasswordChecker />
+        </div>
+      </div>
+    </div>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -31,8 +38,13 @@
 </template>
 
 <script>
+import PasswordChecker from './PasswordChecker.vue';
+
 export default {
   name: 'HelloWorld',
+  components: {
+    PasswordChecker,
+  },
   props: {
     msg: String
   }
